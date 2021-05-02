@@ -7,10 +7,9 @@
  */
 
 import 'react-native-gesture-handler';
-import React, { useContext} from 'react';
+import React from 'react';
 import type {Node} from 'react';
 import {
-  SafeAreaView,
   StatusBar,
   StyleSheet,
   useColorScheme,
@@ -19,6 +18,7 @@ import {
 import {
   Colors,
 } from 'react-native/Libraries/NewAppScreen';
+import { AppRouting } from './src/navigation'
 
 import { Redux } from './src/redux/provider'
 
@@ -31,7 +31,7 @@ const App: () => Node = () => {
 
   return (
     <Redux style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <AppRouting  />
     </Redux>
   );
 };
