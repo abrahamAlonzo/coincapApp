@@ -1,3 +1,3 @@
-const LOAD_COINS = 'LOAD_COINS';
+const UPDATE_COINS = 'UPDATE_COINS';
 
-export {LOAD_COINS};
+export {UPDATE_COINS};
